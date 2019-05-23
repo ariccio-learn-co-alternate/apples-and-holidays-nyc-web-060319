@@ -69,6 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_str += supply
         holday_str += ","
       end
+      
     end
   end
 end
