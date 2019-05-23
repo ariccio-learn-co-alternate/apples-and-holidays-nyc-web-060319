@@ -67,9 +67,9 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_str = "\t#{each_holiday}: "
       holiday_hash[season][each_holiday].each do |supply|
         holiday_str += supply
-        holday_str += ","
+        holiday_str += ","
       end
-      
+      holday_str = holiday_str[0..]
     end
   end
 end
