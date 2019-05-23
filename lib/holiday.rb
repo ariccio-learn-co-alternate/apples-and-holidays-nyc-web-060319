@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
       each_holiday_strs = each_holiday_str.split
       each_holiday_str = ""
       each_holiday_strs.each do |str|
-        each_holiday_str += str.capitalize!
+        each_holiday_str += (str.capitalize! == nil ? str : str.capitalize)
       end
       holiday_str = "  #{each_holiday_str}:"
       holiday_hash[season][each_holiday].each do |supply|
