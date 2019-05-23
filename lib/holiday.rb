@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_str += supply
         holiday_str += ","
       end
-      holiday_str = holiday_str[0..-1]
+      holiday_str = holiday_str[0..-2]
       puts holiday_str
     end
   end
